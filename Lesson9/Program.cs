@@ -7,6 +7,16 @@ namespace Lesson9
         static void Main(string[] args)
         {
 
+            //לקלוט מהשתמש מחרוזת 
+            //לבדוק אם במחרוזת קיים האות y
+            //במידה וכן יש לשרשר את המחרוזת hello להשתמש בפונקציה Concat
+            //אחרת לשרשר את המחרוזת bye
+            //להדפיס את המחרוזת 
+
+            string str1 = "hello";
+            str1 = string.Concat(str1, "world");
+            Console.WriteLine(str1);
+            
             ////לקלוט מהשתמש מחרוזת לבדוק ע"י פונקציה startwith  
             //אם המחרוזת מתחילה בשם שלכם באנגלית
             //במידה וכן לרשום אוקיי
@@ -17,23 +27,23 @@ namespace Lesson9
             //אם כן לרשום אוקיי
             //אחרת לרשום לא
 
-            System.Console.WriteLine("Please enter a string:");
-            string test = Console.ReadLine();
+            //System.Console.WriteLine("Please enter a string:");
+            //string test = Console.ReadLine();
 
-            if (test.StartsWith("Isaac"))
-                System.Console.WriteLine("OK");
-            else
-                System.Console.WriteLine("No");
+            //if (test.StartsWith("Isaac"))
+            //    System.Console.WriteLine("OK");
+            //else
+            //    System.Console.WriteLine("No");
 
-            if (test.EndsWith("F"))
-                System.Console.WriteLine("OK");
-            else
-                System.Console.WriteLine("No");
+            //if (test.EndsWith("F"))
+            //    System.Console.WriteLine("OK");
+            //else
+            //    System.Console.WriteLine("No");
 
 
 
-            Console.WriteLine("please enter a string for testing:");
-            string mystr = Console.ReadLine();
+            //Console.WriteLine("please enter a string for testing:");
+            //string mystr = Console.ReadLine();
             //if(mystr.StartsWith("hello"))
             //{
             //    Console.WriteLine("start");
@@ -43,14 +53,14 @@ namespace Lesson9
             //    Console.WriteLine("not start");
             //}
 
-            if(mystr.EndsWith("world"))
-            {
-                Console.WriteLine("start");
-            }
-            else
-            {
-                Console.WriteLine("not start");
-            }
+            //if(mystr.EndsWith("world"))
+            //{
+            //    Console.WriteLine("start");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("not start");
+            //}
 
 
 
