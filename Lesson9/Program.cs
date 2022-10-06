@@ -15,9 +15,19 @@ namespace Lesson9
             //במידה והמחרוזת ריקה IsNullOrEmpty
             //המחרוזת תהיה empty 
             //להדפיס 
-            //int number = 1;
-            //string name = "dfg";
-            
+
+            string str = null;
+            if (string.IsNullOrEmpty(str))
+                str = "hello";
+            Console.WriteLine(str);
+            string str2 = "";
+            if (string.IsNullOrEmpty(str2))
+                str2 = "";
+            Console.WriteLine(str2);
+
+
+
+
 
             string name = null;
             //string name = "sfdsdf";
