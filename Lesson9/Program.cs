@@ -13,6 +13,7 @@ namespace Lesson9
             //אחרת לשרשר את המחרוזת bye
             //להדפיס את המחרוזת 
 
+
             //while (true)
             //{
             //    Console.WriteLine("enter a course");
@@ -20,9 +21,20 @@ namespace Lesson9
             //    Console.WriteLine(str2.IndexOf('a'));
             //}
 
+            //לקלוט מהשתמש מחרוזת בגודל לפחות 10
+            //במידה והגודל של המחרוזת קטן מ10 לרשום error 
+            //ולקלוט מחדש מחרוזת תקינה
+            //במידה וקיים האות f
+            //יש למחוק את שאר התווים מאינדקס 5
+            //אחרת למחוק מאינדס 3
+            //להדפיס את המחרוזת
+
+            string str2 = "blsadfdsfForYarin";
+            Console.WriteLine(str2.Remove(5));
 
             Console.WriteLine("enter a course");
             string course = Console.ReadLine();
+            
             if (course.IndexOf("y") == -1)
             {
                 Console.WriteLine("buy");
