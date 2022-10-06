@@ -7,6 +7,15 @@ namespace Lesson9
         static void Main(string[] args)
         {
 
+            //int number = 1;
+            //string name = "dfg";
+
+            var number = 1;
+            var string1 = "namesdf";
+            var sdfd = 'a';
+            var bolle = true;
+            
+
             //לקלוט מהשתמש מחרוזת 
             //לבדוק אם במחרוזת קיים האות y
             //במידה וכן יש לשרשר את המחרוזת hello להשתמש בפונקציה Concat
