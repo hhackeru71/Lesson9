@@ -15,15 +15,28 @@ namespace Lesson9
             //לעשות חזקה של 4
             //pow(4, 4);
             //להדפיס את המספר
+            Console.WriteLine("Enter a number:");
+            int.TryParse(Console.ReadLine(),out int num);
+            num = Math.Abs(num);
+            Console.WriteLine(num);
+
+            int num1;
+            Console.WriteLine("Enter a number:");
+            num1 = int.Parse(Console.ReadLine());
+            if (num1 == 4)
+            {
+                num1 = (int)(Math.Pow(num1, num1));
+                Console.WriteLine(num1);
+            }
 
 
-            //מחלקה Math
+           // //מחלקה Math
 
-            double num = Math.Abs(-2.6);//פונקציה שמחזירה ערך מוחלט
-            //Console.WriteLine(num);
-            int num1 = Math.Abs(-1);
-           // Console.WriteLine(num1);
-            num = Math.Pow(2,3);//פונקציה שמחזירה לנו חזקה 
+           // double num = Math.Abs(-2.6);//פונקציה שמחזירה ערך מוחלט
+           // //Console.WriteLine(num);
+           // int num1 = Math.Abs(-1);
+           //// Console.WriteLine(num1);
+           // num = Math.Pow(2,3);//פונקציה שמחזירה לנו חזקה 
 
 
             Console.WriteLine(num);
