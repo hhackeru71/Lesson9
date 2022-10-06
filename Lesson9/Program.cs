@@ -7,6 +7,18 @@ namespace Lesson9
         static void Main(string[] args)
         {
 
+            //double num2 = Math.Sqrt(9);//מחזירה את  השורש הריבועי של המספר
+            //Console.WriteLine(num2);
+
+            double max = Math.Max(2,6);//פונקציה שמחזירה את המספר הגדול
+            //Console.WriteLine(max);
+
+            double min = Math.Min(1,7);
+            Console.WriteLine(min);
+            double pi = Math.PI;
+            Console.WriteLine(pi);
+
+
             //לקלוט מספר ולשנות אותו לערך מוחלט
             //להדפיס את המספר
 
@@ -14,32 +26,32 @@ namespace Lesson9
             //במידה והמספר הוא 4 
             //לעשות חזקה של 4
             //pow(4, 4);
-            //להדפיס את המספר
-            Console.WriteLine("Enter a number:");
-            int.TryParse(Console.ReadLine(),out int num);
-            num = Math.Abs(num);
-            Console.WriteLine(num);
+            ////להדפיס את המספר
+            //Console.WriteLine("Enter a number:");
+            //int.TryParse(Console.ReadLine(), out int num);
+            //num = Math.Abs(num);
+            //Console.WriteLine(num);
 
-            int num1;
-            Console.WriteLine("Enter a number:");
-            num1 = int.Parse(Console.ReadLine());
-            if (num1 == 4)
-            {
-                num1 = (int)(Math.Pow(num1, num1));
-                Console.WriteLine(num1);
-            }
-
-
-           // //מחלקה Math
-
-           // double num = Math.Abs(-2.6);//פונקציה שמחזירה ערך מוחלט
-           // //Console.WriteLine(num);
-           // int num1 = Math.Abs(-1);
-           //// Console.WriteLine(num1);
-           // num = Math.Pow(2,3);//פונקציה שמחזירה לנו חזקה 
+            //int num1;
+            //Console.WriteLine("Enter a number:");
+            //num1 = int.Parse(Console.ReadLine());
+            //if (num1 == 4)
+            //{
+            //    num1 = (int)(Math.Pow(num1, num1));
+            //    Console.WriteLine(num1);
+            //}
 
 
-            Console.WriteLine(num);
+            // //מחלקה Math
+
+            // double num = Math.Abs(-2.6);//פונקציה שמחזירה ערך מוחלט
+            // //Console.WriteLine(num);
+            // int num1 = Math.Abs(-1);
+            //// Console.WriteLine(num1);
+            // num = Math.Pow(2,3);//פונקציה שמחזירה לנו חזקה 
+
+
+           // Console.WriteLine(num);
 
             //להגדיר מחרוזת כ null
             //לבדוק האם המחרוזת היא null להשתמש בפונקציה  IsNullOrEmpty
@@ -75,8 +87,8 @@ namespace Lesson9
             //    Console.WriteLine("no");
 
             //}
-          
-               
+
+
 
             //    //&& name == string.Empty && name == ""
             //    //להגדיר משתנה int nullable 
@@ -107,7 +119,7 @@ namespace Lesson9
             ////int? a = null;
             ////int j = a ?? 0;
             ////Console.WriteLine(j);//
-           
+
 
 
 
@@ -115,8 +127,8 @@ namespace Lesson9
             //var string1 = "namesdf";
             //var sdfd = 'a';
             //var bolle = true;
-            
-            
+
+
 
             ////לקלוט מהשתמש מחרוזת 
             ////לבדוק אם במחרוזת קיים האות y
@@ -146,7 +158,7 @@ namespace Lesson9
 
             //Console.WriteLine("enter a course");
             //string course = Console.ReadLine();
-            
+
             //if (course.IndexOf("y") == -1)
             //{
             //    Console.WriteLine("buy");
@@ -161,7 +173,7 @@ namespace Lesson9
             //string str1 = "hello";
             //str1 = string.Concat(str1, "world");
             //Console.WriteLine(str1);
-            
+
             ////לקלוט מהשתמש מחרוזת לבדוק ע"י פונקציה startwith  
             //אם המחרוזת מתחילה בשם שלכם באנגלית
             //במידה וכן לרשום אוקיי
@@ -263,14 +275,14 @@ namespace Lesson9
             // Console.WriteLine(name.ToUpper());
 
             //Console.WriteLine(index);
-           // int index = name.IndexOf('a');
+            // int index = name.IndexOf('a');
             //index = name.IndexOf("ari");
             //Console.WriteLine(index);
             //Console.WriteLine(name.Length);
             //string name2 = "Yaridsfgfdn";
             //Console.WriteLine(name2 == name);
             //Console.WriteLine(name.Equals(name2))
-            
+
 
         }
         static void CheckString()
@@ -283,7 +295,7 @@ namespace Lesson9
 
             if (str.IndexOf('f') != -1)
             {
-                
+
                 string newSt = str.Remove(5);
                 Console.WriteLine(newSt);
 
@@ -296,13 +308,13 @@ namespace Lesson9
             }
         }
 
-         static string GetStringFromUser()
+        static string GetStringFromUser()
         {
             string str;
             Console.WriteLine("Enter a string of length at least 10!");
             str = Console.ReadLine();
             return str;
         }
-        
+
     }
 }
