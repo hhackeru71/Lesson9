@@ -13,6 +13,13 @@ namespace Lesson9
             //אחרת לשרשר את המחרוזת bye
             //להדפיס את המחרוזת 
 
+            //while (true)
+            //{
+            //    Console.WriteLine("enter a course");
+            //    string str2 = Console.ReadLine();
+            //    Console.WriteLine(str2.IndexOf('a'));
+            //}
+
 
             Console.WriteLine("enter a course");
             string course = Console.ReadLine();
