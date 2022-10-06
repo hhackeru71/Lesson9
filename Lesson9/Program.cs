@@ -13,9 +13,23 @@ namespace Lesson9
             //אחרת לשרשר את המחרוזת bye
             //להדפיס את המחרוזת 
 
-            string str1 = "hello";
-            str1 = string.Concat(str1, "world");
-            Console.WriteLine(str1);
+
+            Console.WriteLine("enter a course");
+            string course = Console.ReadLine();
+            if (course.IndexOf("y") == -1)
+            {
+                Console.WriteLine("buy");
+            }
+            else
+            {
+                string str1 = "hello ";
+                str1 = string.Concat(str1, course);
+                Console.WriteLine(str1);
+            }
+
+            //string str1 = "hello";
+            //str1 = string.Concat(str1, "world");
+            //Console.WriteLine(str1);
             
             ////לקלוט מהשתמש מחרוזת לבדוק ע"י פונקציה startwith  
             //אם המחרוזת מתחילה בשם שלכם באנגלית
