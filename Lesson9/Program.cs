@@ -10,19 +10,40 @@ namespace Lesson9
             //int number = 1;
             //string name = "dfg";
 
-            var number = 1;
-            var string1 = "namesdf";
-            var sdfd = 'a';
-            var bolle = true;
+            //להגדיר משתנה int nullable 
+            //ולבדוק האם המשתנה שלנו הוא null
+            //במידה וכן  המשתנה יקבל 0
+            //להדפיס את המשתנה
+            //אחרת ידפיס את המספר
+
+
+            //להגדיר משתנה string nullable
+            //במידה והמשתנה הוא null
+            // המשתנה יהיה  good
+            //המשתנה אחרת not good
+            //להדפיס את המשתנה
+
+            int? a = null;
+            int j = a ?? 12314;
+            Console.WriteLine(j);//
+
+
+
+
+            //var number = 1;
+            //var string1 = "namesdf";
+            //var sdfd = 'a';
+            //var bolle = true;
+            
             
 
-            //לקלוט מהשתמש מחרוזת 
-            //לבדוק אם במחרוזת קיים האות y
-            //במידה וכן יש לשרשר את המחרוזת hello להשתמש בפונקציה Concat
-            //אחרת לשרשר את המחרוזת bye
-            //להדפיס את המחרוזת 
+            ////לקלוט מהשתמש מחרוזת 
+            ////לבדוק אם במחרוזת קיים האות y
+            ////במידה וכן יש לשרשר את המחרוזת hello להשתמש בפונקציה Concat
+            ////אחרת לשרשר את המחרוזת bye
+            ////להדפיס את המחרוזת 
 
-            CheckString();
+            //CheckString();
 
             //while (true)
             //{
@@ -39,22 +60,22 @@ namespace Lesson9
             //אחרת למחוק מאינדס 3
             //להדפיס את המחרוזת
 
-            string str2 = "blsadfdsfForYarin";
-            Console.WriteLine(str2.Remove(5));
+            //string str2 = "blsadfdsfForYarin";
+            //Console.WriteLine(str2.Remove(5));
 
-            Console.WriteLine("enter a course");
-            string course = Console.ReadLine();
+            //Console.WriteLine("enter a course");
+            //string course = Console.ReadLine();
             
-            if (course.IndexOf("y") == -1)
-            {
-                Console.WriteLine("buy");
-            }
-            else
-            {
-                string str1 = "hello ";
-                str1 = string.Concat(str1, course);
-                Console.WriteLine(str1);
-            }
+            //if (course.IndexOf("y") == -1)
+            //{
+            //    Console.WriteLine("buy");
+            //}
+            //else
+            //{
+            //    string str1 = "hello ";
+            //    str1 = string.Concat(str1, course);
+            //    Console.WriteLine(str1);
+            //}
 
             //string str1 = "hello";
             //str1 = string.Concat(str1, "world");
