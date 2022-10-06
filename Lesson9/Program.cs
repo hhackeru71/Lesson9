@@ -7,6 +7,19 @@ namespace Lesson9
         static void Main(string[] args)
         {
 
+            Console.WriteLine("please enter a string for testing:");
+            string mystr = Console.ReadLine();
+
+            if (mystr.IndexOf("la") != -1)
+            {
+                Console.WriteLine(mystr.Replace("la", "good"));
+            }
+            else
+            {
+                Console.WriteLine("not good");
+            }
+
+
 
             //- מחרוזת עם רווח בהתחלה  לקלוט מהשתמש מחרוזת באנגלית 
             //לעשות הורדת רווח בהתחלה 
@@ -17,7 +30,16 @@ namespace Lesson9
             //למחוק את הרווחים בהתחלה ובסוף
             //ולהדפיס את המחרוזת
 
-            
+            string before = "good morning ,what bla";
+            string after = before.Replace("morning", "night");
+            Console.WriteLine(after);
+
+            //לקלוט מהשתמש מחרוזת 
+            //לאחר מכן לבדוק אם במחרוזת קיים מחרוזת la 
+            //נשנה את החרוזת la  ל good 
+            //אחרת not good
+            //להדפיס את המחרוזת
+
             //string str1 = " yar in ";
             ////str1 = str1.TrimStart();
             //str1 = str1.Trim(); 
