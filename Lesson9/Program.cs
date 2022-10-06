@@ -13,6 +13,7 @@ namespace Lesson9
             //אחרת לשרשר את המחרוזת bye
             //להדפיס את המחרוזת 
 
+            CheckString();
 
             //while (true)
             //{
@@ -161,5 +162,36 @@ namespace Lesson9
             
 
         }
+        static void CheckString()
+        {
+            string str = GetStringFromUser();
+            while (str.Length < 10)
+            {
+                str = GetStringFromUser();
+            }
+
+            if (str.IndexOf('f') != -1)
+            {
+                
+                string newSt = str.Remove(5);
+                Console.WriteLine(newSt);
+
+            }
+
+            else
+            {
+                string newSt = str.Remove(3);
+                Console.WriteLine(newSt);
+            }
+        }
+
+         static string GetStringFromUser()
+        {
+            string str;
+            Console.WriteLine("Enter a string of length at least 10!");
+            str = Console.ReadLine();
+            return str;
+        }
+        
     }
 }
