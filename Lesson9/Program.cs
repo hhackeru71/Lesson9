@@ -7,6 +7,27 @@ namespace Lesson9
         static void Main(string[] args)
         {
 
+            //לקלוט מספר ולשנות אותו לערך מוחלט
+            //להדפיס את המספר
+
+            //לקלוט מספר
+            //במידה והמספר הוא 4 
+            //לעשות חזקה של 4
+            //pow(4, 4);
+            //להדפיס את המספר
+
+
+            //מחלקה Math
+
+            double num = Math.Abs(-2.6);//פונקציה שמחזירה ערך מוחלט
+            //Console.WriteLine(num);
+            int num1 = Math.Abs(-1);
+           // Console.WriteLine(num1);
+            num = Math.Pow(2,3);//פונקציה שמחזירה לנו חזקה 
+
+
+            Console.WriteLine(num);
+
             //להגדיר מחרוזת כ null
             //לבדוק האם המחרוזת היא null להשתמש בפונקציה  IsNullOrEmpty
             //במידה וכן המחרוזת תהיה hello
@@ -16,63 +37,63 @@ namespace Lesson9
             //המחרוזת תהיה empty 
             //להדפיס 
 
-            string str = null;
-            if (string.IsNullOrEmpty(str))
-                str = "hello";
-            Console.WriteLine(str);
-            string str2 = "";
-            if (string.IsNullOrEmpty(str2))
-                str2 = "";
-            Console.WriteLine(str2);
+            //string str = null;
+            //if (string.IsNullOrEmpty(str))
+            //    str = "hello";
+            //Console.WriteLine(str);
+            //string str2 = "";
+            //if (string.IsNullOrEmpty(str2))
+            //    str2 = "";
+            //Console.WriteLine(str2);
 
 
 
 
 
-            string name = null;
-            //string name = "sfdsdf";
+            //string name = null;
+            ////string name = "sfdsdf";
 
-            if(string.IsNullOrEmpty(name))
-            {
-                Console.WriteLine("yes");
-            }
-            else
-            {
-                Console.WriteLine("no");
+            //if(string.IsNullOrEmpty(name))
+            //{
+            //    Console.WriteLine("yes");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("no");
 
-            }
+            //}
           
                
 
-                //&& name == string.Empty && name == ""
-                //להגדיר משתנה int nullable 
-                //ולבדוק האם המשתנה שלנו הוא null
-                //במידה וכן  המשתנה יקבל 0
-                //להדפיס את המשתנה
-                //אחרת ידפיס את המספר
-                int? n = 7;
-            n = n ?? 0;//בדיקה האם המשתנה n null יקבל אפס במידה  וכן 
-            System.Console.WriteLine(n);
-            // part 2
-            // string? s = null;
-            string s = "hello";
-            if (s == null)
-                s = "good";
-            else
-                s = "not good";
-            System.Console.WriteLine(s);
+            //    //&& name == string.Empty && name == ""
+            //    //להגדיר משתנה int nullable 
+            //    //ולבדוק האם המשתנה שלנו הוא null
+            //    //במידה וכן  המשתנה יקבל 0
+            //    //להדפיס את המשתנה
+            //    //אחרת ידפיס את המספר
+            //    int? n = 7;
+            //n = n ?? 0;//בדיקה האם המשתנה n null יקבל אפס במידה  וכן 
+            //System.Console.WriteLine(n);
+            //// part 2
+            //// string? s = null;
+            //string s = "hello";
+            //if (s == null)
+            //    s = "good";
+            //else
+            //    s = "not good";
+            //System.Console.WriteLine(s);
 
 
 
-            //להגדיר משתנה string nullable
-            //במידה והמשתנה הוא null
-            // המשתנה יהיה  good
-            //המשתנה אחרת not good
-            //להדפיס את המשתנה
-            //string s = null;
-            //int? a = null;
-            //int j = a ?? 0;
-            //Console.WriteLine(j);//
+            ////להגדיר משתנה string nullable
+            ////במידה והמשתנה הוא null
+            //// המשתנה יהיה  good
+            ////המשתנה אחרת not good
+            ////להדפיס את המשתנה
+            ////string s = null;
+            ////int? a = null;
+            ////int j = a ?? 0;
+            ////Console.WriteLine(j);//
            
 
 
