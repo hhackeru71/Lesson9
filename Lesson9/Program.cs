@@ -7,17 +7,51 @@ namespace Lesson9
         static void Main(string[] args)
         {
 
+            ////לקלוט מהשתמש מחרוזת לבדוק ע"י פונקציה startwith  
+            //אם המחרוזת מתחילה בשם שלכם באנגלית
+            //במידה וכן לרשום אוקיי
+            //אחרת לרשום לא
+
+            //לקלוט מהשתמש מחרוזת לבדוק ע"י endwith 
+            //אם המחרוזת מסתיימת בשם משפחה שלכם
+            //אם כן לרשום אוקיי
+             //אחרת לרשום לא
+
+
             Console.WriteLine("please enter a string for testing:");
             string mystr = Console.ReadLine();
+            //if(mystr.StartsWith("hello"))
+            //{
+            //    Console.WriteLine("start");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("not start");
+            //}
 
-            if (mystr.IndexOf("la") != -1)
+            if(mystr.EndsWith("world"))
             {
-                Console.WriteLine(mystr.Replace("la", "good"));
+                Console.WriteLine("start");
             }
             else
             {
-                Console.WriteLine("not good");
+                Console.WriteLine("not start");
             }
+
+
+
+
+            //Console.WriteLine("please enter a string for testing:");
+            //string mystr = Console.ReadLine();
+
+            //if (mystr.IndexOf("la") != -1)
+            //{
+            //    Console.WriteLine(mystr.Replace("la", "good"));
+            //}
+            //else
+            //{
+            //    Console.WriteLine("not good");
+            //}
 
 
 
@@ -30,9 +64,9 @@ namespace Lesson9
             //למחוק את הרווחים בהתחלה ובסוף
             //ולהדפיס את המחרוזת
 
-            string before = "good morning ,what bla";
-            string after = before.Replace("morning", "night");
-            Console.WriteLine(after);
+            //string before = "good morning ,what bla";
+            //string after = before.Replace("morning", "night");
+            //Console.WriteLine(after);
 
             //לקלוט מהשתמש מחרוזת 
             //לאחר מכן לבדוק אם במחרוזת קיים מחרוזת la 
