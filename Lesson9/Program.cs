@@ -6,7 +6,21 @@ namespace Lesson9
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("");
+            string name = "Yarin";
+            //Console.WriteLine(name[0]);
+            //Console.WriteLine(name[name.Length-1]);
+            //for (int i = 0; i < name.Length; i++)
+            //{
+            //    Console.WriteLine(name[i]);
+            //}
+
+            //Console.WriteLine(name.ToLower());//
+            // Console.WriteLine(name.ToUpper());
+
+            //Console.WriteLine(index);
+            int index = name.IndexOf('a');
+            index = name.IndexOf("ari");
+            Console.WriteLine(index);
         }
     }
 }
