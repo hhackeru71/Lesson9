@@ -7,14 +7,51 @@ namespace Lesson9
         static void Main(string[] args)
         {
 
+            //להגדיר מחרוזת כ null
+            //לבדוק האם המחרוזת היא null להשתמש בפונקציה  IsNullOrEmpty
+            //במידה וכן המחרוזת תהיה hello
+            //להדפיס
+            //להגדיר מחרוזת כמחרוזת ריקה ""  
+            //במידה והמחרוזת ריקה IsNullOrEmpty
+            //המחרוזת תהיה empty 
+            //להדפיס 
             //int number = 1;
             //string name = "dfg";
+            
 
-            //להגדיר משתנה int nullable 
-            //ולבדוק האם המשתנה שלנו הוא null
-            //במידה וכן  המשתנה יקבל 0
-            //להדפיס את המשתנה
-            //אחרת ידפיס את המספר
+            string name = null;
+            //string name = "sfdsdf";
+
+            if(string.IsNullOrEmpty(name))
+            {
+                Console.WriteLine("yes");
+            }
+            else
+            {
+                Console.WriteLine("no");
+
+            }
+          
+               
+
+                //&& name == string.Empty && name == ""
+                //להגדיר משתנה int nullable 
+                //ולבדוק האם המשתנה שלנו הוא null
+                //במידה וכן  המשתנה יקבל 0
+                //להדפיס את המשתנה
+                //אחרת ידפיס את המספר
+                int? n = 7;
+            n = n ?? 0;//בדיקה האם המשתנה n null יקבל אפס במידה  וכן 
+            System.Console.WriteLine(n);
+            // part 2
+            // string? s = null;
+            string s = "hello";
+            if (s == null)
+                s = "good";
+            else
+                s = "not good";
+            System.Console.WriteLine(s);
+
 
 
             //להגדיר משתנה string nullable
@@ -22,11 +59,11 @@ namespace Lesson9
             // המשתנה יהיה  good
             //המשתנה אחרת not good
             //להדפיס את המשתנה
-
-            int? a = null;
-            int j = a ?? 12314;
-            Console.WriteLine(j);//
-
+            //string s = null;
+            //int? a = null;
+            //int j = a ?? 0;
+            //Console.WriteLine(j);//
+           
 
 
 
