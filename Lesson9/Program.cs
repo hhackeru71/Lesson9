@@ -15,7 +15,21 @@ namespace Lesson9
             //לקלוט מהשתמש מחרוזת לבדוק ע"י endwith 
             //אם המחרוזת מסתיימת בשם משפחה שלכם
             //אם כן לרשום אוקיי
-             //אחרת לרשום לא
+            //אחרת לרשום לא
+
+            System.Console.WriteLine("Please enter a string:");
+            string test = Console.ReadLine();
+
+            if (test.StartsWith("Isaac"))
+                System.Console.WriteLine("OK");
+            else
+                System.Console.WriteLine("No");
+
+            if (test.EndsWith("F"))
+                System.Console.WriteLine("OK");
+            else
+                System.Console.WriteLine("No");
+
 
 
             Console.WriteLine("please enter a string for testing:");
